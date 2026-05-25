@@ -1,0 +1,91 @@
+@page
+@model NguyenNguyenNguRazorPages.Pages.Admin.ReportModel
+@{
+    ViewData["Title"] = "Báo cáo Thống kê";
+}
+
+<div class="container mt-4 pb-5">
+    <!-- Title Card -->
+    <div class="card border-0 rounded-card shadow-soft p-4 mb-4 bg-white">
+        <div class="d-flex align-items-center gap-3">
+            <div class="gradient-warning text-white rounded-premium p-3 d-flex align-items-center justify-content-center" style="width: 55px; height: 55px;">
+                <i class="bi bi-bar-chart-fill fs-4"></i>
+            </div>
+            <div>
+                <h3 class="fw-bold text-dark mb-1">Báo Cáo Thống Kê Tin Tức</h3>
+                <p class="text-muted mb-0 small">Thống kê khối lượng bài viết xuất bản theo khoảng thời gian và sắp xếp giảm dần theo ngày tạo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Date Range Picker Card -->
+    <div class="card border-0 rounded-card shadow-soft p-4 mb-4 bg-white">
+        <form method="get" class="row g-3 align-items-end">
+            <div class="col-md-4">
+                <label class="form-label text-secondary fw-bold" style="font-size: 0.9rem;"><i class="bi bi-calendar-range text-warning me-1"></i> Từ ngày (Start Date)</label>
+                <input type="date" name="StartDate" value="@Model.StartDate?.ToString("yyyy-MM-dd")" class="form-control bg-light border-0 py-2.5" />
+            </div>
+            <div class="col-md-4">
+                <label class="form-label text-secondary fw-bold" style="font-size: 0.9rem;"><i class="bi bi-calendar-range-fill text-warning me-1"></i> Đến ngày (End Date)</label>
+                <input type="date" name="EndDate" value="@Model.EndDate?.ToString("yyyy-MM-dd")" class="form-control bg-light border-0 py-2.5" />
+            </div>
+            <div class="col-md-4 d-flex gap-2">
+                <button type="submit" class="btn btn-warning flex-grow-1 text-white fw-bold py-2.5 shadow-soft border-0 gradient-warning">
+                    Lọc Dữ Liệu Báo Cáo
+                </button>
+                <a href="/Admin/Report" class="btn btn-outline-secondary fw-bold py-2.5 px-3 d-flex align-items-center justify-content-center">
+                    <i class="bi bi-arrow-counterclockwise fs-5"></i>
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Data Visualization / Table Card -->
+    @if (Model.NewsArticles != null && Model.NewsArticles.Any())
+    {
+        <div class="card border-0 rounded-card shadow-soft overflow-hidden bg-white">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="bg-light text-uppercase text-secondary" style="font-size: 0.85rem; letter-spacing: 0.5px;">
+                        <tr>
+                            <th class="py-3 ps-4">Mã bài viết (ID)</th>
+                            <th class="py-3">Tiêu đề bài viết</th>
+                            <th class="py-3">Chuyên mục</th>
+                            <th class="py-3">Ngày tạo bài</th>
+                            <th class="py-3 text-center pe-4">Trạng thái</th>
+                        </tr>
+                    </thead>
+                    <tbody class="border-top-0">
+                        @foreach (var news in Model.NewsArticles)
+                        {
+                            <tr>
+                                <td class="py-3 ps-4 fw-bold text-secondary">#@news.NewsArticleId</td>
+                                <td class="py-3 fw-bold text-dark text-truncate" style="max-width: 400px;">@news.NewsTitle</td>
+                                <td class="py-3"><span class="badge bg-light text-dark border">@(news.Category?.CategoryName ?? "Không có")</span></td>
+                                <td class="py-3"><i class="bi bi-clock me-1 text-muted"></i> @news.CreatedDate?.ToString("dd/MM/yyyy HH:mm")</td>
+                                <td class="py-3 text-center pe-4">
+                                    @if (news.NewsStatus == true)
+                                    {
+                                        <span class="badge bg-success-subtle text-success border border-success-subtle px-2.5 py-1.5"><i class="bi bi-patch-check-fill me-1"></i> Active</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle px-2.5 py-1.5"><i class="bi bi-file-earmark-diff-fill me-1"></i> Inactive</span>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+    else if (Model.StartDate.HasValue || Model.EndDate.HasValue)
+    {
+        <div class="alert alert-info border-0 rounded-premium shadow-soft p-4 text-center mb-0" role="alert">
+            <i class="bi bi-info-circle-fill display-5 text-info mb-3 d-block"></i>
+            <h5 class="fw-bold alert-heading">Không có dữ liệu bài viết!</h5>
+            <p class="mb-0 text-muted">Không tìm thấy bài viết nào được xuất bản trong khoảng thời gian đã chọn.</p>
+        </div>
+    }
+</div>

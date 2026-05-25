@@ -1,0 +1,325 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\pages\\news\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\pages\\news\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\pages\\admin\\accountmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\pages\\admin\\accountmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\pages\\news\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\pages\\news\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\pages\\staff\\categorymanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\pages\\staff\\categorymanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\hubs\\newshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\hubs\\newshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\pages\\staff\\categorymanagement.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\pages\\staff\\categorymanagement.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\pages\\staff\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\pages\\staff\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\pages\\staff\\profile.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\pages\\staff\\profile.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\pages\\admin\\report.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\pages\\admin\\report.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\pages\\admin\\accountmanagement.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\pages\\admin\\accountmanagement.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\pages\\admin\\report.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\pages\\admin\\report.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|e:\\coding ide\\back-end\\microsoft visual studio\\assignment 2\\nguyennguyenngu_se.net_a02.sln\\nguyennguyenngurazorpages\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36D2F60-2ED9-4531-3BF2-F0241DC6B570}|NguyenNguyenNguRazorPages\\NguyenNguyenNguRazorPages.csproj|solutionrelative:nguyennguyenngurazorpages\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Pages\\Login.cshtml.cs",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Pages\\Login.cshtml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvywAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T04:06:06.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Program.cs",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Program.cs",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Program.cs",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T04:03:45.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\appsettings.json",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\appsettings.json",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\appsettings.json",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-25T04:05:48.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Logout.cshtml",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Pages\\Logout.cshtml",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Logout.cshtml",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Pages\\Logout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-25T09:30:51.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Pages\\Index.cshtml",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Index.cshtml",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAAAgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-25T04:14:20.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\News\\Index.cshtml",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Pages\\News\\Index.cshtml",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\News\\Index.cshtml",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Pages\\News\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-25T08:45:12.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountManagement.cshtml",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Admin\\AccountManagement.cshtml",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Pages\\Admin\\AccountManagement.cshtml",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Admin\\AccountManagement.cshtml",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Pages\\Admin\\AccountManagement.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-25T04:17:19.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Pages\\Login.cshtml",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Login.cshtml",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Pages\\Login.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-25T04:05:39.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\News\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Pages\\News\\Index.cshtml.cs",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\News\\Index.cshtml.cs",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Pages\\News\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T08:45:21.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Profile.cshtml.cs",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Staff\\Profile.cshtml.cs",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Pages\\Staff\\Profile.cshtml.cs",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Staff\\Profile.cshtml.cs",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Pages\\Staff\\Profile.cshtml.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAcwEoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T09:12:45.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoryManagement.cshtml",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Staff\\CategoryManagement.cshtml",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Pages\\Staff\\CategoryManagement.cshtml",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Staff\\CategoryManagement.cshtml",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Pages\\Staff\\CategoryManagement.cshtml",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAcwIEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-25T09:36:22.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoryManagement.cshtml.cs",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Staff\\CategoryManagement.cshtml.cs",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Pages\\Staff\\CategoryManagement.cshtml.cs",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Staff\\CategoryManagement.cshtml.cs",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Pages\\Staff\\CategoryManagement.cshtml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAcwDgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T09:36:30.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NewsHub.cs",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Hubs\\NewsHub.cs",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Hubs\\NewsHub.cs",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Hubs\\NewsHub.cs",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Hubs\\NewsHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T09:56:18.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Pages\\Logout.cshtml.cs",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Logout.cshtml.cs",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Pages\\Logout.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T09:31:11.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Staff\\Profile.cshtml",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Pages\\Staff\\Profile.cshtml",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Staff\\Profile.cshtml",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Pages\\Staff\\Profile.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwDYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-25T09:12:38.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Pages\\Index.cshtml.cs",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T04:12:01.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Report.cshtml",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Admin\\Report.cshtml",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Pages\\Admin\\Report.cshtml",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Admin\\Report.cshtml",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Pages\\Admin\\Report.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-25T04:23:36.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AccountManagement.cshtml.cs",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Admin\\AccountManagement.cshtml.cs",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Pages\\Admin\\AccountManagement.cshtml.cs",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Admin\\AccountManagement.cshtml.cs",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Pages\\Admin\\AccountManagement.cshtml.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAASwDsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T04:18:05.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Report.cshtml.cs",
+              "DocumentMoniker": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Admin\\Report.cshtml.cs",
+              "RelativeDocumentMoniker": "NguyenNguyenNguRazorPages\\Pages\\Admin\\Report.cshtml.cs",
+              "ToolTip": "E:\\Coding IDE\\Back-end\\Microsoft Visual Studio\\Assignment 2\\NguyenNguyenNgu_SE.NET_A02.sln\\NguyenNguyenNguRazorPages\\Pages\\Admin\\Report.cshtml.cs",
+              "RelativeToolTip": "NguyenNguyenNguRazorPages\\Pages\\Admin\\Report.cshtml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T04:23:46.359Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

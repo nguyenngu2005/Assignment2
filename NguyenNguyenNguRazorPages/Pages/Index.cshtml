@@ -1,0 +1,145 @@
+@page
+@model NguyenNguyenNguRazorPages.Pages.IndexModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container mt-3">
+    <!-- Premium Header Welcoming Card -->
+    <div class="card border-0 rounded-card shadow-soft overflow-hidden mb-5">
+        <div class="gradient-primary text-white p-4 p-md-5 position-relative">
+            <div class="row align-items-center position-relative" style="z-index: 10;">
+                <div class="col-md-8">
+                    <span class="badge bg-white text-primary fw-bold text-uppercase mb-2" style="font-size: 0.8rem; letter-spacing: 1px;">Hệ thống Quản trị</span>
+                    <h1 class="fw-bold mb-2">Chào mừng đến với FUNewsManagementSystem</h1>
+                    <p class="lead mb-0 text-white-50">Cơ sở dữ liệu thông tin khoa học và bản tin nội bộ học thuật.</p>
+                </div>
+                <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                    <span class="text-white display-3"><i class="bi bi-patch-check-fill opacity-75 animate-bounce"></i></span>
+                </div>
+            </div>
+            <!-- Decorative circle shapes in background -->
+            <div style="position: absolute; right: -50px; bottom: -50px; width: 250px; height: 250px; background: rgba(255,255,255,0.06); border-radius: 50%;"></div>
+            <div style="position: absolute; right: 100px; top: -50px; width: 150px; height: 150px; background: rgba(255,255,255,0.04); border-radius: 50%;"></div>
+        </div>
+    </div>
+
+    <!-- Operations Section Header -->
+    <h4 class="fw-bold mb-4 text-secondary"><i class="bi bi-grid-fill me-1 text-primary"></i> Các Chức Năng Khả Dụng</h4>
+
+    <div class="row g-4">
+        <!-- ADMIN CHANNELS -->
+        @if (User.IsInRole("Admin"))
+        {
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 rounded-card shadow-soft hover-card overflow-hidden">
+                    <div class="gradient-danger p-3 text-white">
+                        <i class="bi bi-people-fill fs-3"></i>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h5 class="fw-bold mb-2">Quản lý Tài khoản</h5>
+                            <p class="text-muted small">Cấp phát, cập nhật thông tin và điều chỉnh quyền truy cập của các thành viên trong hệ thống.</p>
+                        </div>
+                        <a href="/Admin/AccountManagement" class="btn btn-danger w-100 mt-3 d-flex align-items-center justify-content-center gap-1">
+                            Xem tài khoản <i class="bi bi-arrow-right-short fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 rounded-card shadow-soft hover-card overflow-hidden">
+                    <div class="gradient-warning p-3 text-white">
+                        <i class="bi bi-bar-chart-fill fs-3"></i>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h5 class="fw-bold mb-2">Thống kê Báo cáo</h5>
+                            <p class="text-muted small">Xem tổng hợp số liệu bài viết theo thời gian, lọc dữ liệu chính xác và sắp xếp theo ngày đăng.</p>
+                        </div>
+                        <a href="/Admin/Report" class="btn btn-warning w-100 mt-3 text-white d-flex align-items-center justify-content-center gap-1">
+                            Xem báo cáo <i class="bi bi-arrow-right-short fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- STAFF CHANNELS -->
+        @if (User.IsInRole("Staff"))
+        {
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 rounded-card shadow-soft hover-card overflow-hidden">
+                    <div class="gradient-success p-3 text-white">
+                        <i class="bi bi-tags-fill fs-3"></i>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h5 class="fw-bold mb-2">Quản lý Chuyên mục</h5>
+                            <p class="text-muted small">Cấu hình danh mục tin tức tin bài. Hạn chế xóa các chuyên mục đang có bài viết hoạt động.</p>
+                        </div>
+                        <a href="/Staff/CategoryManagement" class="btn btn-success w-100 mt-3 d-flex align-items-center justify-content-center gap-1">
+                            Vào quản lý <i class="bi bi-arrow-right-short fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 rounded-card shadow-soft hover-card overflow-hidden">
+                    <div class="gradient-info p-3 text-white">
+                        <i class="bi bi-pencil-square fs-3"></i>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h5 class="fw-bold mb-2">Biên tập Tin tức</h5>
+                            <p class="text-muted small">Tạo mới bài viết học thuật, chỉnh sửa và gắn các Tag tương ứng. Hỗ trợ SignalR cập nhật tức thì.</p>
+                        </div>
+                        <a href="/Staff/NewsManagement" class="btn btn-info text-white w-100 mt-3 d-flex align-items-center justify-content-center gap-1">
+                            Vào biên tập <i class="bi bi-arrow-right-short fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 rounded-card shadow-soft hover-card overflow-hidden">
+                    <div class="gradient-dark p-3 text-white">
+                        <i class="bi bi-person-badge-fill fs-3"></i>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h5 class="fw-bold mb-2">Hồ sơ cá nhân & Lịch sử</h5>
+                            <p class="text-muted small">Cập nhật thông tin bảo mật tài khoản cá nhân, xem toàn bộ lịch sử các bài báo bạn đã viết.</p>
+                        </div>
+                        <a href="/Staff/Profile" class="btn btn-dark w-100 mt-3 d-flex align-items-center justify-content-center gap-1">
+                            Xem hồ sơ <i class="bi bi-arrow-right-short fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- PUBLIC READ NEWS (Available for all authorized users) -->
+        @if (User.IsInRole("Lecturer") || User.IsInRole("Staff") || User.IsInRole("Admin"))
+        {
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 rounded-card shadow-soft hover-card overflow-hidden">
+                    <div class="gradient-primary p-3 text-white">
+                        <i class="bi bi-newspaper fs-3"></i>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h5 class="fw-bold mb-2">Cổng đọc tin công khai</h5>
+                            <p class="text-muted small">Xem và theo dõi tất cả tin tức sự kiện đang kích hoạt. Cổng thông tin tối ưu hóa xem trên di động.</p>
+                        </div>
+                        <a href="/News/Index" class="btn btn-primary w-100 mt-3 d-flex align-items-center justify-content-center gap-1">
+                            Đọc tin tức <i class="bi bi-book fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

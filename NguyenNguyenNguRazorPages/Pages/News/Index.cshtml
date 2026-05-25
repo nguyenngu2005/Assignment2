@@ -1,0 +1,153 @@
+@page
+@model NguyenNguyenNguRazorPages.Pages.News.IndexModel
+@{
+    ViewData["Title"] = "Trang tin tức công giáo";
+}
+
+<div class="container mt-4 pb-5">
+    <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
+        <div>
+            <h2 class="fw-bold text-primary"><i class="bi bi-newspaper"></i> Bản Tin Công Khai</h2>
+            <p class="text-muted mb-0">Cập nhật tin tức học thuật và sự kiện mới nhất (Tự động tải thời gian thực)</p>
+        </div>
+        <div>
+            @if (User.Identity == null || !User.Identity.IsAuthenticated)
+            {
+                <a href="/Login" class="btn btn-primary fw-bold shadow-sm">
+                    <i class="bi bi-box-arrow-in-right"></i> Đăng Nhập Hệ Thống
+                </a>
+            }
+        </div>
+    </div>
+
+    @if (Model.ActiveNewsList != null && Model.ActiveNewsList.Any())
+    {
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var news in Model.ActiveNewsList)
+            {
+                <div class="col">
+                    <div class="card h-100 shadow-sm hover-shadow border-0 rounded-3">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-secondary">@(news.Category?.CategoryName ?? "Chung")</span>
+                                <small class="text-muted"><i class="bi bi-calendar3"></i> @news.CreatedDate?.ToString("dd/MM/yyyy")</small>
+                            </div>
+                            <h5 class="card-title fw-bold text-dark text-line-clamp-2">@news.NewsTitle</h5>
+                            <h6 class="card-subtitle mb-3 text-muted text-line-clamp-2"><em>@news.Headline</em></h6>
+                            <p class="card-text text-secondary text-line-clamp-3" style="font-size: 0.95rem;">
+                                @news.NewsContent
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pt-0 pb-3">
+                            <div class="mb-3">
+                                @if (news.Tags != null && news.Tags.Any())
+                                {
+                                    @foreach (var tag in news.Tags)
+                                    {
+                                        <span class="badge bg-light text-primary border me-1 mb-1">#@tag.TagName</span>
+                                    }
+                                }
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Nguồn: <strong>@(news.NewsSource ?? "Nội bộ")</strong></small>
+                                <button type="button" class="btn btn-sm btn-outline-primary fw-bold" onclick="showNewsDetail('@news.NewsTitle', '@news.Headline', '@news.NewsContent', '@news.NewsSource', '@news.Category?.CategoryName', '@news.CreatedDate?.ToString("dd/MM/yyyy HH:mm")')">
+                                    Đọc chi tiết
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info py-4 text-center shadow-sm">
+            <h4 class="alert-heading fw-bold"><i class="bi bi-info-circle"></i> Chưa có bài viết nào!</h4>
+            <p class="mb-0 text-muted">Hiện tại hệ thống chưa phát hành bài viết công khai nào. Vui lòng quay lại sau.</p>
+        </div>
+    }
+</div>
+
+<!-- Modal Chi Tiết Tin Tức -->
+<div class="modal fade" id="detailNewsModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content shadow-lg border-0 rounded-3">
+            <div class="modal-header bg-primary text-white border-0 py-3">
+                <h5 class="modal-title fw-bold" id="detailTitle"></h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body px-4 py-3">
+                <div class="d-flex flex-wrap text-muted small mb-3 border-bottom pb-2">
+                    <span class="me-3"><i class="bi bi-folder2-open text-primary"></i> Chuyên mục: <strong id="detailCategory" class="text-dark"></strong></span>
+                    <span class="me-3"><i class="bi bi-calendar-event text-primary"></i> Ngày đăng: <strong id="detailDate" class="text-dark"></strong></span>
+                    <span><i class="bi bi-globe text-primary"></i> Nguồn: <strong id="detailSource" class="text-dark"></strong></span>
+                </div>
+                <h5 class="fw-bold text-secondary mb-3" id="detailHeadline"></h5>
+                <div id="detailContent" class="text-dark lh-base" style="white-space: pre-wrap; font-size: 1.05rem;"></div>
+            </div>
+            <div class="modal-footer border-0 pb-3">
+                <button type="button" class="btn btn-secondary fw-bold px-4" data-bs-dismiss="modal">Đóng lại</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <!-- Tiêm thư viện SignalR từ CDN chính thức -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.min.js"></script>
+
+    <script>
+        var detailModal = new bootstrap.Modal(document.getElementById('detailNewsModal'));
+
+        function showNewsDetail(title, headline, content, source, category, date) {
+            document.getElementById('detailTitle').innerText = title;
+            document.getElementById('detailHeadline').innerText = headline;
+            document.getElementById('detailContent').innerText = content || "Không có nội dung chi tiết.";
+            document.getElementById('detailSource').innerText = source || "Không rõ";
+            document.getElementById('detailCategory').innerText = category || "Chung";
+            document.getElementById('detailDate').innerText = date || "N/A";
+            detailModal.show();
+        }
+
+        // 1. Khởi tạo kết nối tới đường dẫn Hub đã cấu hình ở Server
+        var connection = new signalR.HubConnectionBuilder().withUrl("/newshub").build();
+
+        // 2. Lắng nghe sự kiện "LoadNewsRealtime" từ Server bắn xuống
+        connection.on("LoadNewsRealtime", function () {
+            console.log("Hệ thống phát hiện có tin tức mới thay đổi! Đang tự động cập nhật...");
+            // Load lại trang tự động cho người dùng hưởng thụ tính năng Realtime
+            location.reload();
+        });
+
+        // 3. Kích hoạt mở cổng kết nối
+        connection.start().then(function () {
+            console.log("Cổng kết nối SignalR Real-time đã hoạt động kết nối thành công!");
+        }).catch(function (err) {
+            return console.error(err.toString());
+        });
+    </script>
+    
+    <style>
+        .hover-shadow:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+            transition: all 0.3s ease-in-out;
+        }
+        .hover-shadow {
+            transition: all 0.3s ease-in-out;
+        }
+        .text-line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+        }
+        .text-line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+        }
+    </style>
+}

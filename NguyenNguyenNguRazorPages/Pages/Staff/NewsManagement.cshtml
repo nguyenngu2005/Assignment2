@@ -1,0 +1,257 @@
+@page
+@model NguyenNguyenNguRazorPages.Pages.Staff.NewsManagementModel
+@{
+    ViewData["Title"] = "Quản lý Tin tức";
+}
+
+<div class="container mt-4 pb-5">
+    <!-- Header Card -->
+    <div class="card border-0 rounded-card shadow-soft p-4 mb-4 bg-white">
+        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3">
+            <div class="d-flex align-items-center gap-3">
+                <div class="gradient-primary text-white rounded-premium p-3 d-flex align-items-center justify-content-center" style="width: 55px; height: 55px;">
+                    <i class="bi bi-pencil-square fs-4"></i>
+                </div>
+                <div>
+                    <h3 class="fw-bold text-dark mb-1">Quản Lý Tin Tức</h3>
+                    <p class="text-muted mb-0 small">Soạn thảo, biên tập bài viết sự kiện và quản lý nhãn Tag liên quan (Thời gian thực).</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-primary shadow-soft fw-bold d-flex align-items-center gap-1" onclick="openCreateModal()">
+                    <i class="bi bi-plus-circle-fill"></i> Viết bài mới ngay
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Form Card -->
+    <div class="card border-0 rounded-card shadow-soft p-3 mb-4 bg-white">
+        <form method="get" class="row g-3 align-items-center">
+            <div class="col-md-9 col-lg-10">
+                <div class="input-group">
+                    <span class="input-group-text bg-light border-end-0 text-muted"><i class="bi bi-search"></i></span>
+                    <input type="text" name="SearchTerm" value="@Model.SearchTerm" class="form-control border-start-0 bg-light" placeholder="Tìm kiếm tin bài theo tiêu đề, tóm tắt hoặc nguồn tin..." />
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2 d-flex gap-2">
+                <button type="submit" class="btn btn-primary flex-grow-1 fw-bold shadow-soft">Tìm kiếm</button>
+                <a href="/Staff/NewsManagement" class="btn btn-outline-primary d-flex align-items-center justify-content-center" title="Reset tìm kiếm"><i class="bi bi-arrow-counterclockwise"></i></a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Status Alerts -->
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show rounded-premium shadow-soft border-0 mb-4 px-4 py-3" role="alert">
+            <i class="bi bi-check-circle-fill me-2 fs-5 align-middle"></i>
+            <strong>Thành công!</strong> @TempData["Message"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show rounded-premium shadow-soft border-0 mb-4 px-4 py-3" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2 fs-5 align-middle"></i>
+            <strong>Lỗi xảy ra!</strong> @TempData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <!-- News Table Card -->
+    <div class="card border-0 rounded-card shadow-soft overflow-hidden bg-white">
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="bg-light text-uppercase text-secondary" style="font-size: 0.85rem; letter-spacing: 0.5px;">
+                    <tr>
+                        <th class="py-3 ps-4">Mã số (ID)</th>
+                        <th class="py-3">Tiêu đề bài viết</th>
+                        <th class="py-3">Chuyên mục</th>
+                        <th class="py-3">Ngày tạo</th>
+                        <th class="py-3" style="min-width: 150px;">Thẻ Tags</th>
+                        <th class="py-3 text-center">Trạng Thái</th>
+                        <th class="py-3 text-center pe-4">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody class="border-top-0">
+                    @foreach (var news in Model.NewsArticles)
+                    {
+                        <tr>
+                            <td class="py-3 ps-4 fw-bold text-secondary">#@news.NewsArticleId</td>
+                            <td class="py-3 fw-bold text-dark text-truncate" style="max-width: 250px;">@news.NewsTitle</td>
+                            <td class="py-3"><span class="badge bg-light text-dark border">@(news.Category?.CategoryName ?? "N/A")</span></td>
+                            <td class="py-3" style="font-size: 0.9rem;"><i class="bi bi-calendar3 text-muted me-1"></i> @news.CreatedDate?.ToString("dd/MM/yyyy")</td>
+                            <td class="py-3">
+                                @if (news.Tags != null && news.Tags.Any())
+                                {
+                                    <div class="d-flex flex-wrap gap-1">
+                                        @foreach (var tag in news.Tags)
+                                        {
+                                            <span class="badge bg-primary-subtle text-primary border border-primary-subtle" style="font-size: 0.75rem;">#@tag.TagName</span>
+                                        }
+                                    </div>
+                                }
+                                else
+                                {
+                                    <span class="text-muted small"><em>Không có Tag</em></span>
+                                }
+                            </td>
+                            <td class="py-3 text-center">
+                                @if (news.NewsStatus == true)
+                                {
+                                    <span class="badge bg-success-subtle text-success border border-success-subtle px-2.5 py-1.5"><i class="bi bi-patch-check-fill me-1"></i> Active</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle px-2.5 py-1.5"><i class="bi bi-file-earmark-diff-fill me-1"></i> Inactive</span>
+                                }
+                            </td>
+                            <td class="py-3 text-center pe-4">
+                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                    <button class="btn btn-sm btn-warning shadow-soft fw-bold text-dark d-flex align-items-center gap-1"
+                                            data-id="@news.NewsArticleId"
+                                            data-title="@news.NewsTitle"
+                                            data-headline="@news.Headline"
+                                            data-content="@news.NewsContent"
+                                            data-source="@news.NewsSource"
+                                            data-category="@news.CategoryId"
+                                            data-status="@(news.NewsStatus == true ? "true" : "false")"
+                                            data-tags="@string.Join(",", news.Tags != null ? news.Tags.Select(t => t.TagId) : Enumerable.Empty<int>())"
+                                            onclick="openEditModal(this)">
+                                        <i class="bi bi-pencil-square"></i> Sửa
+                                    </button>
+                                    <form method="post" asp-page-handler="Delete" asp-route-id="@news.NewsArticleId" class="d-inline" onsubmit="return confirm('Bạn có chắc chắn muốn xóa bài viết này không?');">
+                                        <button type="submit" class="btn btn-sm btn-danger shadow-soft fw-bold d-flex align-items-center gap-1">
+                                            <i class="bi bi-trash-fill"></i> Xóa
+                                        </button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Create/Update News Popup -->
+<div class="modal fade" id="newsModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 rounded-card shadow-premium overflow-hidden">
+            <form method="post" asp-page-handler="Save">
+                <div class="modal-header bg-primary text-white border-0 py-3">
+                    <h5 class="modal-title fw-bold" id="modalTitle"><i class="bi bi-journal-plus"></i> Biên tập tin tức bài viết</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4 bg-light-subtle row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label fw-bold text-secondary" style="font-size: 0.9rem;">Mã bài viết (ID)</label>
+                        <input type="text" asp-for="FormArticle.NewsArticleId" id="modalNewsId" class="form-control bg-white" required placeholder="Ví dụ: N001..." />
+                        <input type="hidden" id="isEditMode" name="IsEditMode" value="false" />
+                    </div>
+                    <div class="col-md-8 mb-3">
+                        <label class="form-label fw-bold text-secondary" style="font-size: 0.9rem;">Chuyên mục chính (Category)</label>
+                        <select asp-for="FormArticle.CategoryId" id="modalCategory" class="form-select bg-white">
+                            @foreach (var cat in Model.Categories)
+                            {
+                                <option value="@cat.CategoryId">@cat.CategoryName</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label class="form-label fw-bold text-secondary" style="font-size: 0.9rem;">Tiêu đề bài viết</label>
+                        <input type="text" asp-for="FormArticle.NewsTitle" id="modalTitleInput" class="form-control bg-white" required placeholder="Nhập tiêu đề tin chính..." />
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label class="form-label fw-bold text-secondary" style="font-size: 0.9rem;">Tóm tắt ngắn (Headline)</label>
+                        <textarea asp-for="FormArticle.Headline" id="modalHeadline" class="form-control bg-white" rows="2" required placeholder="Nhập tóm tắt mô tả bài viết..."></textarea>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label class="form-label fw-bold text-secondary" style="font-size: 0.9rem;">Nội dung chi tiết</label>
+                        <textarea asp-for="FormArticle.NewsContent" id="modalContent" class="form-control bg-white" rows="5" placeholder="Viết toàn bộ nội dung tin bài ở đây..."></textarea>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold text-secondary" style="font-size: 0.9rem;">Nguồn tin (Source)</label>
+                        <input type="text" asp-for="FormArticle.NewsSource" id="modalSource" class="form-control bg-white" placeholder="Ví dụ: Dân trí, Tuổi trẻ, nội bộ..." />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold text-secondary" style="font-size: 0.9rem;">Trạng thái phát hành</label>
+                        <select asp-for="FormArticle.NewsStatus" id="modalStatus" class="form-select bg-white">
+                            <option value="true">Active (Xuất bản công khai)</option>
+                            <option value="false">Inactive (Lưu dưới dạng nháp)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12 mb-2">
+                        <label class="form-label fw-bold text-secondary" style="font-size: 0.9rem;"><i class="bi bi-tag-fill text-primary"></i> Gắn thẻ Tags liên kết (Giữ nút Ctrl để chọn nhiều)</label>
+                        <select name="SelectedTagIds" id="modalTags" class="form-select bg-white" multiple style="height: 110px;">
+                            @foreach (var tag in Model.Tags)
+                            {
+                                <option value="@tag.TagId">@tag.TagName</option>
+                            }
+                        </select>
+                        <span class="text-muted small">Mỗi thẻ Tag được chọn sẽ xuất hiện dưới dạng từ khóa tìm kiếm.</span>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 p-3 bg-light-subtle rounded-bottom-card justify-content-end gap-2">
+                    <button type="button" class="btn btn-secondary px-4 fw-bold" data-bs-dismiss="modal">Hủy bỏ</button>
+                    <button type="submit" class="btn btn-primary px-4 fw-bold shadow-soft">Lưu bài viết</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        var myModal = new bootstrap.Modal(document.getElementById('newsModal'));
+
+        function openCreateModal() {
+            document.getElementById('modalTitle').innerText = "Viết Bài Mới";
+            document.getElementById('modalNewsId').readOnly = false;
+            document.getElementById('modalNewsId').value = "";
+            document.getElementById('modalTitleInput').value = "";
+            document.getElementById('modalHeadline').value = "";
+            document.getElementById('modalContent').value = "";
+            document.getElementById('modalSource').value = "";
+            document.getElementById('modalStatus').value = "true";
+            document.getElementById('isEditMode').value = "false";
+            
+            var tagsSelect = document.getElementById('modalTags');
+            for (var i = 0; i < tagsSelect.options.length; i++) {
+                tagsSelect.options[i].selected = false;
+            }
+            myModal.show();
+        }
+
+        function openEditModal(btn) {
+            var id = btn.getAttribute('data-id');
+            var title = btn.getAttribute('data-title');
+            var headline = btn.getAttribute('data-headline');
+            var content = btn.getAttribute('data-content');
+            var source = btn.getAttribute('data-source');
+            var categoryId = btn.getAttribute('data-category');
+            var status = btn.getAttribute('data-status');
+            var tagsStr = btn.getAttribute('data-tags') || "";
+            var selectedTags = tagsStr ? tagsStr.split(',') : [];
+
+            document.getElementById('modalTitle').innerText = "Cập Nhật Bài Viết";
+            document.getElementById('modalNewsId').value = id;
+            document.getElementById('modalNewsId').readOnly = true;
+            document.getElementById('modalTitleInput').value = title;
+            document.getElementById('modalHeadline').value = headline;
+            document.getElementById('modalContent').value = content;
+            document.getElementById('modalSource').value = source;
+            document.getElementById('modalCategory').value = categoryId;
+            document.getElementById('modalStatus').value = status;
+            document.getElementById('isEditMode').value = "true";
+
+            var tagsSelect = document.getElementById('modalTags');
+            for (var i = 0; i < tagsSelect.options.length; i++) {
+                tagsSelect.options[i].selected = selectedTags.includes(tagsSelect.options[i].value);
+            }
+            myModal.show();
+        }
+    </script>
+}

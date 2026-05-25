@@ -1,0 +1,54 @@
+@page
+@model NguyenNguyenNguRazorPages.Pages.LoginModel
+@{
+    ViewData["Title"] = "Đăng Nhập";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center align-items-center" style="min-height: 70vh;">
+        <div class="col-md-5 col-lg-4">
+            <div class="card border-0 rounded-card shadow-premium overflow-hidden">
+                <!-- Header with premium gradient -->
+                <div class="card-header gradient-primary text-white text-center py-4 border-0">
+                    <h3 class="fw-bold mb-1"><i class="bi bi-shield-lock-fill"></i> ĐĂNG NHẬP</h3>
+                    <p class="mb-0 text-white-50" style="font-size: 0.85rem;">Hệ thống Quản lý Tin tức FUNews</p>
+                </div>
+                <div class="card-body p-4 bg-white">
+                    <form method="post">
+                        <!-- Input Email -->
+                        <div class="mb-3">
+                            <label class="form-label fw-bold text-muted" style="font-size: 0.85rem;"><i class="bi bi-envelope-fill me-1 text-primary"></i> Địa chỉ Email</label>
+                            <input type="email" asp-for="Email" class="form-control" placeholder="Tài khoản @@FUNewsManagementSystem.org" required />
+                        </div>
+                        
+                        <!-- Input Password -->
+                        <div class="mb-4">
+                            <label class="form-label fw-bold text-muted" style="font-size: 0.85rem;"><i class="bi bi-key-fill me-1 text-primary"></i> Mật khẩu</label>
+                            <input type="password" asp-for="Password" class="form-control" placeholder="••••••••" required />
+                        </div>
+
+                        <!-- Validation Message -->
+                        @if (!ModelState.IsValid)
+                        {
+                            <div class="alert alert-danger rounded-premium py-2 px-3 mb-4 d-flex align-items-center gap-2 border-0 shadow-sm" style="font-size: 0.9rem;">
+                                <i class="bi bi-exclamation-triangle-fill fs-5"></i>
+                                <div>
+                                    @Html.ValidationMessage("LoginError")
+                                </div>
+                            </div>
+                        }
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary w-100 py-2.5 fw-bold shadow-soft gradient-primary border-0">
+                            Xác nhận đăng nhập <i class="bi bi-arrow-right-short fs-5 ms-1 align-middle"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!-- Auxiliary guest access link -->
+            <div class="text-center mt-3">
+                <a href="/News/Index" class="text-decoration-none text-muted small fw-bold"><i class="bi bi-eye"></i> Ghé thăm trang tin tức (Khách vãng lai)</a>
+            </div>
+        </div>
+    </div>
+</div>

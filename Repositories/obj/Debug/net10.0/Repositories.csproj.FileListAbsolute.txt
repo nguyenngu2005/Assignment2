@@ -1,0 +1,28 @@
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\Repositories\bin\Debug\net10.0\Repositories.deps.json
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\Repositories\bin\Debug\net10.0\Repositories.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\Repositories\bin\Debug\net10.0\Repositories.pdb
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\Repositories\obj\Debug\net10.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\Repositories\obj\Debug\net10.0\Repositories.AssemblyInfoInputs.cache
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\Repositories\obj\Debug\net10.0\Repositories.AssemblyInfo.cs
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\Repositories\obj\Debug\net10.0\Repositories.csproj.CoreCompileInputs.cache
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\Repositories\obj\Debug\net10.0\Repositories.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\Repositories\obj\Debug\net10.0\refint\Repositories.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\Repositories\obj\Debug\net10.0\Repositories.pdb
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\Repositories\obj\Debug\net10.0\ref\Repositories.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\Repositories\bin\Debug\net10.0\Repositories.deps.json
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\Repositories\bin\Debug\net10.0\Repositories.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\Repositories\bin\Debug\net10.0\Repositories.pdb
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\Repositories\bin\Debug\net10.0\BusinessObjects.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\Repositories\bin\Debug\net10.0\DataAccessObjects.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\Repositories\bin\Debug\net10.0\BusinessObjects.pdb
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\Repositories\bin\Debug\net10.0\DataAccessObjects.pdb
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\Repositories\obj\Debug\net10.0\Repositories.csproj.AssemblyReference.cache
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\Repositories\obj\Debug\net10.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\Repositories\obj\Debug\net10.0\Repositories.AssemblyInfoInputs.cache
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\Repositories\obj\Debug\net10.0\Repositories.AssemblyInfo.cs
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\Repositories\obj\Debug\net10.0\Repositories.csproj.CoreCompileInputs.cache
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\Repositories\obj\Debug\net10.0\Reposito.787EC4B2.Up2Date
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\Repositories\obj\Debug\net10.0\Repositories.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\Repositories\obj\Debug\net10.0\refint\Repositories.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\Repositories\obj\Debug\net10.0\Repositories.pdb
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\Repositories\obj\Debug\net10.0\ref\Repositories.dll

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="BusinessObjects/BusinessObjects.csproj" />
+  <Project Path="DataAccessObjects/DataAccessObjects.csproj" />
+  <Project Path="NguyenNguyenNguRazorPages/NguyenNguyenNguRazorPages.csproj" />
+  <Project Path="Repositories/Repositories.csproj" />
+</Solution>

@@ -1,0 +1,22 @@
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\BusinessObjects\bin\Debug\net10.0\BusinessObjects.deps.json
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\BusinessObjects\bin\Debug\net10.0\BusinessObjects.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\BusinessObjects\bin\Debug\net10.0\BusinessObjects.pdb
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\BusinessObjects\obj\Debug\net10.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\BusinessObjects\obj\Debug\net10.0\BusinessObjects.AssemblyInfoInputs.cache
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\BusinessObjects\obj\Debug\net10.0\BusinessObjects.AssemblyInfo.cs
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\BusinessObjects\obj\Debug\net10.0\BusinessObjects.csproj.CoreCompileInputs.cache
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\BusinessObjects\obj\Debug\net10.0\BusinessObjects.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\BusinessObjects\obj\Debug\net10.0\refint\BusinessObjects.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\BusinessObjects\obj\Debug\net10.0\BusinessObjects.pdb
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\BusinessObjects\obj\Debug\net10.0\ref\BusinessObjects.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\BusinessObjects\bin\Debug\net10.0\BusinessObjects.deps.json
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\BusinessObjects\bin\Debug\net10.0\BusinessObjects.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\BusinessObjects\bin\Debug\net10.0\BusinessObjects.pdb
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\BusinessObjects\obj\Debug\net10.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\BusinessObjects\obj\Debug\net10.0\BusinessObjects.AssemblyInfoInputs.cache
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\BusinessObjects\obj\Debug\net10.0\BusinessObjects.AssemblyInfo.cs
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\BusinessObjects\obj\Debug\net10.0\BusinessObjects.csproj.CoreCompileInputs.cache
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\BusinessObjects\obj\Debug\net10.0\BusinessObjects.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\BusinessObjects\obj\Debug\net10.0\refint\BusinessObjects.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\BusinessObjects\obj\Debug\net10.0\BusinessObjects.pdb
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\BusinessObjects\obj\Debug\net10.0\ref\BusinessObjects.dll

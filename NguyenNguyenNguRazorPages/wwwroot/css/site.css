@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #f6f8fb;
+  color: #2b303a;
+  margin-bottom: 60px;
+}
+
+/* Form focus highlights */
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-select:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.15rem #fff, 0 0 0 0.25rem rgba(37, 140, 251, 0.4) !important;
+  border-color: #258cfb !important;
+}
+
+/* Custom elevations and styles */
+.shadow-soft {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.035) !important;
+}
+.shadow-medium {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05) !important;
+}
+.shadow-premium {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Bo góc mượt mà */
+.rounded-premium {
+  border-radius: 12px !important;
+}
+.rounded-card {
+  border-radius: 16px !important;
+}
+
+/* Gradients */
+.gradient-primary {
+  background: linear-gradient(135deg, #4776e6 0%, #8e54e9 100%) !important;
+}
+.gradient-dark {
+  background: linear-gradient(135deg, #2b303a 0%, #1a1c23 100%) !important;
+}
+.gradient-success {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%) !important;
+}
+.gradient-danger {
+  background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%) !important;
+}
+.gradient-warning {
+  background: linear-gradient(135deg, #f857a6 0%, #ff5858 100%) !important;
+}
+.gradient-info {
+  background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%) !important;
+}
+
+/* Animations and Hover effects */
+.hover-card {
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.hover-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.075) !important;
+}
+
+.table-hover tbody tr {
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.table-hover tbody tr:hover {
+  background-color: rgba(71, 118, 230, 0.035) !important;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 500;
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.btn:hover {
+  transform: translateY(-1.5px);
+}
+.btn:active {
+  transform: translateY(0);
+}
+
+.form-control, .form-select {
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  border: 1px solid #e1e6eb;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+}
+.form-control:focus, .form-select:focus {
+  background-color: #ffffff;
+}
+
+/* Glassmorphism utility */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Badge styles */
+.badge {
+  padding: 0.4em 0.75em;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+/* Navbar premium tweaks */
+.navbar {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.nav-link {
+  font-weight: 500;
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #4776e6;
+  transition: all 0.2s ease;
+}
+.nav-link:hover::after {
+  width: 80%;
+  left: 10%;
+}

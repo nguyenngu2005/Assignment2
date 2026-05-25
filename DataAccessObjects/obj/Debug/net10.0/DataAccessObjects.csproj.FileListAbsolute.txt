@@ -1,0 +1,31 @@
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\DataAccessObjects\bin\Debug\net10.0\DataAccessObjects.deps.json
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\DataAccessObjects\bin\Debug\net10.0\DataAccessObjects.runtimeconfig.json
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\DataAccessObjects\bin\Debug\net10.0\DataAccessObjects.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\DataAccessObjects\bin\Debug\net10.0\DataAccessObjects.pdb
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\DataAccessObjects\obj\Debug\net10.0\DataAccessObjects.csproj.AssemblyReference.cache
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\DataAccessObjects\obj\Debug\net10.0\DataAccessObjects.GeneratedMSBuildEditorConfig.editorconfig
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\DataAccessObjects\obj\Debug\net10.0\DataAccessObjects.AssemblyInfoInputs.cache
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\DataAccessObjects\obj\Debug\net10.0\DataAccessObjects.AssemblyInfo.cs
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\DataAccessObjects\obj\Debug\net10.0\DataAccessObjects.csproj.CoreCompileInputs.cache
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\DataAccessObjects\obj\Debug\net10.0\DataAccessObjects.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\DataAccessObjects\obj\Debug\net10.0\refint\DataAccessObjects.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\DataAccessObjects\obj\Debug\net10.0\DataAccessObjects.pdb
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\DataAccessObjects\obj\Debug\net10.0\DataAccessObjects.genruntimeconfig.cache
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment2\NguyenNguyenNgu_SE.NET_A02\DataAccessObjects\obj\Debug\net10.0\ref\DataAccessObjects.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\DataAccessObjects\bin\Debug\net10.0\DataAccessObjects.deps.json
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\DataAccessObjects\bin\Debug\net10.0\DataAccessObjects.runtimeconfig.json
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\DataAccessObjects\bin\Debug\net10.0\DataAccessObjects.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\DataAccessObjects\bin\Debug\net10.0\DataAccessObjects.pdb
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\DataAccessObjects\bin\Debug\net10.0\BusinessObjects.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\DataAccessObjects\bin\Debug\net10.0\BusinessObjects.pdb
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\DataAccessObjects\obj\Debug\net10.0\DataAccessObjects.csproj.AssemblyReference.cache
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\DataAccessObjects\obj\Debug\net10.0\DataAccessObjects.GeneratedMSBuildEditorConfig.editorconfig
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\DataAccessObjects\obj\Debug\net10.0\DataAccessObjects.AssemblyInfoInputs.cache
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\DataAccessObjects\obj\Debug\net10.0\DataAccessObjects.AssemblyInfo.cs
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\DataAccessObjects\obj\Debug\net10.0\DataAccessObjects.csproj.CoreCompileInputs.cache
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\DataAccessObjects\obj\Debug\net10.0\DataAcce.79975846.Up2Date
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\DataAccessObjects\obj\Debug\net10.0\DataAccessObjects.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\DataAccessObjects\obj\Debug\net10.0\refint\DataAccessObjects.dll
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\DataAccessObjects\obj\Debug\net10.0\DataAccessObjects.pdb
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\DataAccessObjects\obj\Debug\net10.0\DataAccessObjects.genruntimeconfig.cache
+E:\Coding IDE\Back-end\Microsoft Visual Studio\Assignment 2\NguyenNguyenNgu_SE.NET_A02.sln\DataAccessObjects\obj\Debug\net10.0\ref\DataAccessObjects.dll

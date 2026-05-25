@@ -1,0 +1,172 @@
+@page
+@model NguyenNguyenNguRazorPages.Pages.Staff.CategoryManagementModel
+@{
+    ViewData["Title"] = "Quản lý Chuyên mục";
+}
+
+<div class="container mt-4 pb-5">
+    <!-- Header Card -->
+    <div class="card border-0 rounded-card shadow-soft p-4 mb-4 bg-white">
+        <div class="d-flex flex-column flex-sm-row justify-content-between align-sm-items-center gap-3">
+            <div class="d-flex align-items-center gap-3">
+                <div class="gradient-success text-white rounded-premium p-3 d-flex align-items-center justify-content-center" style="width: 55px; height: 55px;">
+                    <i class="bi bi-tags-fill fs-4"></i>
+                </div>
+                <div>
+                    <h3 class="fw-bold text-dark mb-1">Quản Lý Chuyên Mục</h3>
+                    <p class="text-muted mb-0 small">Thiết lập các chuyên mục phân loại tin bài (Category) cho bản tin hệ thống.</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-success shadow-soft fw-bold d-flex align-items-center gap-1" onclick="openCreateModal()">
+                    <i class="bi bi-plus-circle-fill"></i> Thêm chuyên mục mới
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Form Card -->
+    <div class="card border-0 rounded-card shadow-soft p-3 mb-4 bg-white">
+        <form method="get" class="row g-3 align-items-center">
+            <div class="col-md-9 col-lg-10">
+                <div class="input-group">
+                    <span class="input-group-text bg-light border-end-0 text-muted"><i class="bi bi-search"></i></span>
+                    <input type="text" name="SearchTerm" value="@Model.SearchTerm" class="form-control border-start-0 bg-light" placeholder="Tìm kiếm chuyên mục theo tên hoặc mô tả chi tiết..." />
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2 d-flex gap-2">
+                <button type="submit" class="btn btn-success flex-grow-1 fw-bold shadow-soft">Tìm kiếm</button>
+                <a href="/Staff/CategoryManagement" class="btn btn-outline-success d-flex align-items-center justify-content-center" title="Reset tìm kiếm"><i class="bi bi-arrow-counterclockwise"></i></a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Status Alerts -->
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show rounded-premium shadow-soft border-0 mb-4 px-4 py-3" role="alert">
+            <i class="bi bi-check-circle-fill me-2 fs-5 align-middle"></i>
+            <strong>Thành công!</strong> @TempData["Message"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show rounded-premium shadow-soft border-0 mb-4 px-4 py-3" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2 fs-5 align-middle"></i>
+            <strong>Lỗi xảy ra!</strong> @TempData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <!-- Categories Table Card -->
+    <div class="card border-0 rounded-card shadow-soft overflow-hidden bg-white">
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="bg-light text-uppercase text-secondary" style="font-size: 0.85rem; letter-spacing: 0.5px;">
+                    <tr>
+                        <th class="py-3 ps-4">Mã chuyên mục (ID)</th>
+                        <th class="py-3">Tên chuyên mục</th>
+                        <th class="py-3">Mô tả chi tiết</th>
+                        <th class="py-3 text-center">Trạng thái</th>
+                        <th class="py-3 text-center pe-4">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody class="border-top-0">
+                    @foreach (var cat in Model.Categories)
+                    {
+                        <tr>
+                            <td class="py-3 ps-4 fw-bold text-secondary">#@cat.CategoryId</td>
+                            <td class="py-3 fw-bold text-dark">@cat.CategoryName</td>
+                            <td class="py-3 text-muted text-truncate" style="max-width: 350px;">@cat.CategoryDesciption</td>
+                            <td class="py-3 text-center">
+                                @if (cat.IsActive == true)
+                                {
+                                    <span class="badge bg-success-subtle text-success border border-success-subtle px-2.5 py-1.5"><i class="bi bi-check-circle-fill me-1"></i> Active</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle px-2.5 py-1.5"><i class="bi bi-slash-circle me-1"></i> Inactive</span>
+                                }
+                            </td>
+                            <td class="py-3 text-center pe-4">
+                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                    <button class="btn btn-sm btn-warning shadow-soft fw-bold text-dark d-flex align-items-center gap-1"
+                                            onclick="openEditModal('@cat.CategoryId', '@cat.CategoryName', '@cat.CategoryDesciption', '@(cat.IsActive == true ? "true" : "false")')">
+                                        <i class="bi bi-pencil-square"></i> Sửa
+                                    </button>
+                                    <form method="post" asp-page-handler="Delete" asp-route-id="@cat.CategoryId" class="d-inline" onsubmit="return confirm('Bạn có thực sự muốn xóa chuyên mục @cat.CategoryName?');">
+                                        <button type="submit" class="btn btn-sm btn-danger shadow-soft fw-bold d-flex align-items-center gap-1">
+                                            <i class="bi bi-trash-fill"></i> Xóa
+                                        </button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Category Popup -->
+<div class="modal fade" id="categoryModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 rounded-card shadow-premium">
+            <form method="post" asp-page-handler="Save">
+                <div class="modal-header bg-success text-white border-0 py-3">
+                    <h5 class="modal-title fw-bold" id="modalTitle"><i class="bi bi-tag-fill"></i> Thông tin Chuyên mục</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4 bg-light-subtle">
+                    <input type="hidden" asp-for="FormCategory.CategoryId" id="modalCategoryId" />
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold text-secondary" style="font-size: 0.9rem;">Tên chuyên mục</label>
+                        <input type="text" asp-for="FormCategory.CategoryName" id="modalCategoryName" class="form-control bg-white" required placeholder="Nhập tên chuyên mục mới..." />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold text-secondary" style="font-size: 0.9rem;">Mô tả chuyên mục</label>
+                        <textarea asp-for="FormCategory.CategoryDesciption" id="modalCategoryDesc" class="form-control bg-white" rows="3" placeholder="Nhập mô tả tóm tắt..."></textarea>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label fw-bold text-secondary" style="font-size: 0.9rem;">Trạng thái hoạt động</label>
+                        <select asp-for="FormCategory.IsActive" id="modalCategoryActive" class="form-select bg-white">
+                            <option value="true">Active (Hoạt động bình thường)</option>
+                            <option value="false">Inactive (Tạm thời vô hiệu)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 p-3 bg-light-subtle rounded-bottom-card justify-content-end gap-2">
+                    <button type="button" class="btn btn-secondary px-4 fw-bold" data-bs-dismiss="modal">Đóng lại</button>
+                    <button type="submit" class="btn btn-success px-4 fw-bold shadow-soft">Lưu chuyên mục</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        var myModal = new bootstrap.Modal(document.getElementById('categoryModal'));
+
+        function openCreateModal() {
+            document.getElementById('modalTitle').innerText = "Thêm Chuyên Mục Mới";
+            document.getElementById('modalCategoryId').value = "0";
+            document.getElementById('modalCategoryName').value = "";
+            document.getElementById('modalCategoryDesc').value = "";
+            document.getElementById('modalCategoryActive').value = "true";
+            myModal.show();
+        }
+
+        function openEditModal(id, name, desc, isActive) {
+            document.getElementById('modalTitle').innerText = "Cập Nhật Chuyên Mục";
+            document.getElementById('modalCategoryId').value = id;
+            document.getElementById('modalCategoryName').value = name;
+            document.getElementById('modalCategoryDesc').value = desc;
+            document.getElementById('modalCategoryActive').value = isActive;
+            myModal.show();
+        }
+    </script>
+}
